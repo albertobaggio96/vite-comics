@@ -25,9 +25,13 @@ export default{
   @use "./styles/general.scss" as *;
   @use "../node_modules/bootstrap/scss/bootstrap.scss" as *;
 
-  .dc-bg-color{
-    background-color: $DC-color;
+  #content{
+    background-color: $content-color;
   }
+
+  // .dc-bg-color{
+  //   background-color: $DC-color;
+  // }
   .my-active{
     color: $DC-color;
     border-bottom: 5px solid $DC-color;
