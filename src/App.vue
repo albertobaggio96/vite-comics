@@ -13,17 +13,11 @@ export default{
 </script>
 
 <template>
-  <header>
     <HeaderDC/>
-  </header>
 
-  <main>
     <MainDC/>
-  </main> 
 
-  <footer>
     <FooterDC/>
-  </footer>
 </template>
 
 <style lang="scss">
