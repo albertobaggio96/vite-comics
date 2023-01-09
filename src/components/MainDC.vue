@@ -8,6 +8,6 @@
   <h2>main</h2>
 </template>
 
-<style lang="">
-  
+<style lang="scss">
+
 </style>

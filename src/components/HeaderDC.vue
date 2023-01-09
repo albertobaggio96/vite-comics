@@ -8,6 +8,7 @@
   <h1>Header</h1>
 </template>
 
-<style lang="">
-  
+<style lang="scsss">
+
+
 </style>
