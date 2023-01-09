@@ -1,6 +1,6 @@
 <script>
 import HeaderDC from './components/HeaderDC.vue'
-import MainDC from './components/MainDC.vue'
+import MainDC from './components/main/MainDC.vue'
 import FooterDC from './components/FooterVue.vue'
 
 export default{
@@ -29,9 +29,9 @@ export default{
     background-color: $content-color;
   }
 
-  // .dc-bg-color{
-  //   background-color: $DC-color;
-  // }
+  .dc-bg-color{
+    background-color: $DC-color;
+  }
   .my-active{
     color: $DC-color;
     border-bottom: 5px solid $DC-color;

@@ -53,7 +53,7 @@
 <template>
   <header class="container">
     <nav class="d-flex align-items-center">
-      <img src="../assets/img/dc-logo.png" alt="DC logo">
+      <img src="../../public/img/dc-logo.png" alt="DC logo">
       <ul class="d-flex ms-auto mb-0">
         <li v-for="navBar in navBarList" :class=" navBar.isActive ? 'my-active' : ''" class="list-group-item me-3">{{ navBar.name.toUpperCase() }}</li>
       </ul>

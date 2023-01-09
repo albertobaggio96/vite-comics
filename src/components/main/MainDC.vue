@@ -1,6 +1,9 @@
 <script>
+  import DCMerchandising from "./DCMerchandising.vue"
   export default {
-
+    components: {
+      DCMerchandising
+    }
   }
 </script>
 
@@ -10,11 +13,13 @@
         <div class="container py-5">
           <h1> -- Content goes here -- </h1>
       </div>
-      </section>
+    </section>
+
+    <DCMerchandising/>
+
   </main>
-      
 </template>
   
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
