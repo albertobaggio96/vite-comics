@@ -63,7 +63,7 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 #footer-link{
   height: 250px;

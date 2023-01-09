@@ -28,4 +28,8 @@ export default{
   .dc-bg-color{
     background-color: $DC-color;
   }
+  .my-active{
+    color: $DC-color;
+    border-bottom: 5px solid $DC-color;
+  }
 </style>
