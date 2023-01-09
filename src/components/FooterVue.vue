@@ -27,7 +27,7 @@
 </script>
 
 <template>
-  <footer class="bg-dark text-white">
+  <footer class="text-white">
     
     <section id="footer-links" class="py-5 overflow-hidden">
         <div class="container position-relative">
@@ -45,37 +45,55 @@
         </div>
       </section>
   
-      <section id="footer-bottom" class="container bg-dark d-flex">
-        <button>SIGN-UP NOW!</button>
-        <div class="ms-auto">social</div>
+      <section id="footer-bottom" class="container d-flex py-4 align-items-center">
+        <button class="text-white border-2 p-2 fs-5">SIGN-UP NOW!</button>
+        <div class="ms-auto fs-5">FOLLOW US</div>
+        <img src="../assets/img/footer-facebook.png" alt="Facebook" class="ps-3">
+        <img src="../assets/img/footer-twitter.png" alt="Twitter" class="ps-3">
+        <img src="../assets/img/footer-youtube.png" alt="Twitter" class="ps-3">
+        <img src="../assets/img/footer-pinterest.png" alt="Pinterest" class="ps-3">
+        <img src="../assets/img/footer-periscope.png" alt="Periscope" class="ps-3">
       </section>
     </footer>
 </template>
 
 <style lang="scss" scoped>
+  @use "../styles/partials/variables" as *;
 
-#footer-links{
-  background-image: url("../assets/img/footer-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  .container{
-    height: 330px; 
-    
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    
-  
-    div{
 
-      width: 165px;
+  footer{
+    background-color: $footer-color;
+
+    #footer-links{
+      background-image: url("../assets/img/footer-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      .container{
+        height: 330px;     
+      
+        div{
+          width: 165px;
+      
+          li{
+            font-size: small;
   
-      li{
-        font-size: small;
+          }
+        }
+      }
+  
+      
+    }
+  
+    #footer-bottom{
+      button {
+        border-color: $DC-color;
+        background-color: $footer-color;
+      }
+      div{
+        font-weight: bolder;
+        color: $DC-color
       }
     }
   }
-  
-}
   
 </style>
