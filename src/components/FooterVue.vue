@@ -1,11 +1,11 @@
 <script>
   export default {
-    
+
   }
 </script>
 
 <template>
-  <h1>Header</h1>
+  <h3>footer</h3>
 </template>
 
 <style lang="">
