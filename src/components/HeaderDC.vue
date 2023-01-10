@@ -72,6 +72,7 @@ ul{
   font-weight: 600;
   li{
     line-height: 112px;
+    font-size: small;
   }
 }
 

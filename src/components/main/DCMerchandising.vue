@@ -47,7 +47,12 @@
 </template>
 
 <style lang="scss">
-  img{
-    width: 50px;
+  #icon-banner{
+    font-size: .9rem;
+    
+    img{
+      width: 45px;
+    }
   }
+
 </style>

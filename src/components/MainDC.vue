@@ -100,8 +100,7 @@
         <CurrentSeriesMain v-for="serie in seriesList"
         :thumb = "serie.thumb"
         :price = "serie.price" 
-        :series = "serie.series"
-        :type = "serie.type" />
+        :series = "serie.series" />
       </div>
       <div class="w-100 d-flex justify-content-center">
         <a href="#" class="text-decoration-none text-white px-5 py-1 ">LOAD MORE</a>

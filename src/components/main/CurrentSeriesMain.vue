@@ -3,18 +3,18 @@ export default {
   props : [
     "thumb",
     "price",
-    "series",
-    "type"
+    "series"
   ]
 }
 </script>
 
 <template>
-    <article>
-      <figure class="text-center">
+    <article >
+      <div class="text-center position-relative mb-3">
         <img :src="thumb" :alt="series" >
-      </figure>
-      <h3 class="pb-5">{{ series.toUpperCase() }}</h3>
+        <div class="position-absolute bg-dark bg-opacity-75">{{ price }}</div>
+      </div>
+      <h3 class="pb-4">{{ series.toUpperCase() }}</h3>
     </article>
 </template>
 
@@ -22,14 +22,28 @@ export default {
   article{
     width: calc(100% / 6);
     width: 150px;
-    
 
-    img{
-      width: 100%;
+    div.position-relative{
       height: 150px;
-      object-fit: cover;
-      object-position: top;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      div{
+        right: 0;
+        bottom: 0;
+        display: none;
+      }
+
+      &:hover div{
+        display: block;
+      }
     }
+
     h3{
       font-size: small;
     }
