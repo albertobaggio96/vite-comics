@@ -1,6 +1,6 @@
 <script>
 import HeaderDC from './components/HeaderDC.vue'
-import MainDC from './components/main/MainDC.vue'
+import MainDC from './components/MainDC.vue'
 import FooterDC from './components/FooterVue.vue'
 
 export default{
