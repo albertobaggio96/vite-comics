@@ -93,13 +93,38 @@
   <main class="text-white">
     <JumboMain/>
 
-    <CurrentSeriesMain/>
+
+    <section id="serie-cards" class="container w-100 pb-3">
+      <h3 class="fs-4 px-3 py-2">CURRENT SERIES</h3>
+      <div class="d-flex flex-wrap justify-content-between pt-5">
+        <CurrentSeriesMain v-for="serie in seriesList"
+        :thumb = "serie.thumb"
+        :price = "serie.price" 
+        :series = "serie.series"
+        :type = "serie.type" />
+      </div>
+      <div class="w-100 d-flex justify-content-center">
+        <a href="#" class="text-decoration-none text-white px-5 py-1 ">LOAD MORE</a>
+      </div>
+    </section>
 
     <DCMerchandising/>
 
   </main>
 </template>
   
-<style lang="scss">
+<style lang="scss" scoped>
+  @use "../styles/partials/variables" as *;
+  h3{
+    background-color: $DC-color;
+    display: inline;
+    position: relative;
+    bottom : 15px;    
+  }
+  a{
+    background-color: $DC-color;
 
+  }
+  
+  
 </style>

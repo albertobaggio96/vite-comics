@@ -25,8 +25,16 @@ export default{
   @use "./styles/general.scss" as *;
   @use "../node_modules/bootstrap/scss/bootstrap.scss" as *;
 
+  main{
+    background-color: $content-color;
+  }
+
   #content{
     background-color: $content-color;
+  }
+
+  .container{
+    padding: 0 150px;
   }
 
   .dc-bg-color{
